@@ -2,6 +2,10 @@
 /* See: https://github.com/JayHoltslander/materialize-fixes */
 
 
+/* Material Icons Fix */
+/* See: https://codepen.io/j_holtslander/pen/prEXEa */
+/* */
+.material-icons {font-size: inherit;}
 
 /* IPHONE X+ SCREEN FIX FOR MATERIALIZE */
 /* See: https://css-tricks.com/the-notch-and-css/ */
