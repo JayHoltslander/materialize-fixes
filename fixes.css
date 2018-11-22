@@ -1,6 +1,6 @@
-// IPHONE X+ SCREEN FIX FOR MATERIALIZE
-// See: https://css-tricks.com/the-notch-and-css/
-//
+/* IPHONE X+ SCREEN FIX FOR MATERIALIZE */
+/* See: https://css-tricks.com/the-notch-and-css/ */
+/* */
 .navbar-fixed nav {
 background-color: green;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
@@ -9,24 +9,24 @@ background-color: green;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
-//MATERIALIZE'S STICKY FOOTER
-//See: https://materializecss.com/footer.html
-//
+/* MATERIALIZE'S STICKY FOOTER */
+/* See: https://materializecss.com/footer.html */
+/* */
 body {display: flex;min-height: 100vh;flex-direction: column;}
 main {flex: 1 0 auto;}
 
 
-// CUSTOM FIXED FOOTER FOR MATERIALIZE
-//
+/* CUSTOM FIXED FOOTER FOR MATERIALIZE */
+/* */
 .footer-fixed {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 }
 
-// CUSTOM CARD TITLE GRADIENTS
-//
-.card {
+/* CUSTOM CARD TITLE GRADIENTS */
+/* */
+/* .card {
 	.card-image {
 		.card-title {
 			&.gradient {
@@ -41,4 +41,4 @@ main {flex: 1 0 auto;}
 			}
 		}	
 	}	
-}
+} */
