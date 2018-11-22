@@ -2,7 +2,6 @@
 /* See: https://css-tricks.com/the-notch-and-css/ */
 /* */
 .navbar-fixed nav {
-background-color: green;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 .footer-fixed footer {
