@@ -2,6 +2,11 @@
 // See: https://github.com/JayHoltslander/materialize-fixes
 
 
+// CUSTOM VARIABLES
+//
+$sidenav-bg: #151515;
+$sidenav-color: rgba(255,255,255,0.5);
+$sidenav-divider: rgba(255,255,255,0.2);
 
 // IPHONE X+ SCREEN FIX FOR MATERIALIZE
 // See: https://css-tricks.com/the-notch-and-css/
@@ -45,4 +50,28 @@ main {flex: 1 0 auto;}
 			}
 		}	
 	}	
+}
+
+
+// CUSTOM DARK SIDEBAR
+//
+.sidenav {
+	&.dark {
+		background-color: $sidenav-bg;
+		color: $sidenav-color;
+		.subheader {
+			color: $sidenav-color;
+		}
+		.divider {
+			background-color: $sidenav-divider;
+		}
+		li {
+			a {
+				color: $sidenav-color;
+				i.material-icons {
+					color: $sidenav-color;
+				}
+			}
+		}	
+	}
 }
