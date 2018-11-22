@@ -1,0 +1,9 @@
+// IPHONE X+ SCREEN FIX FOR MATERIALIZE
+// See: https://css-tricks.com/the-notch-and-css/
+//
+.navbar-fixed nav {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+.footer-fixed footer {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
