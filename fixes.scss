@@ -28,15 +28,19 @@ $sidenav-divider: rgba(255,255,255,0.2);
 // CUSTOM NAV-CENTER
 // See: https://stackoverflow.com/a/42890059/751570
 //
-nav.nav-center ul {
-  text-align: center;
-  li {
-    display: inline;
-    float: none;
-    a {
-      display: inline-block;
-    }
-  }
+nav {
+	&.nav-center {
+		ul {
+			text-align: center;
+			li {
+				display: inline;
+				float: none;
+				a {
+					display: inline-block;
+				}
+			}
+		}
+	}
 }
 
 
