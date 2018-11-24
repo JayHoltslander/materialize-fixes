@@ -6,11 +6,13 @@
 //
 .material-icons {font-size: inherit;}
 
+
 // CUSTOM VARIABLES
 //
 $sidenav-bg: #151515;
 $sidenav-color: rgba(255,255,255,0.5);
 $sidenav-divider: rgba(255,255,255,0.2);
+
 
 // IPHONE X+ SCREEN FIX FOR MATERIALIZE
 // See: https://css-tricks.com/the-notch-and-css/
@@ -21,6 +23,22 @@ $sidenav-divider: rgba(255,255,255,0.2);
 .footer-fixed footer {
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
+
+
+// CUSTOM NAV-CENTER
+// See: https://stackoverflow.com/a/42890059/751570
+//
+nav.nav-center ul {
+  text-align: center;
+  li {
+    display: inline;
+    float: none;
+    a {
+      display: inline-block;
+    }
+  }
+}
+
 
 // MATERIALIZE'S STICKY FOOTER
 // See: https://materializecss.com/footer.html
