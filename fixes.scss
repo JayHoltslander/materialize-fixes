@@ -88,6 +88,20 @@ main {flex: 1 0 auto;}
 	}
 }
 
+// FULL-WIDTH COLLECTIONS INSIDE CARD-CONTENT
+.card {
+	ul {
+		&.collection {
+			&.full-width {
+				width: calc(100% + 48px);
+				left: -24px;
+				border-left: none;
+				border-right: none;
+			}
+		}
+	}
+}
+
 
 // CUSTOM DARK SIDEBAR
 //
