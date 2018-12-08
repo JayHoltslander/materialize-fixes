@@ -78,6 +78,16 @@ main {flex: 1 0 auto;}
 	}	
 }
 
+// HIDDEN CARD TITLES
+//
+.card {
+	.card-title {
+		&.hidden {
+			text-indent:-9999px;
+		}
+	}
+}
+
 
 // CUSTOM DARK SIDEBAR
 //
