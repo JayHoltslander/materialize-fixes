@@ -89,6 +89,13 @@ main {flex: 1 0 auto;}
 	}	
 }
 
+// IMPROVE CARD-TITLE TO ALLOW FOR FLOW-TEXT TO BE USED
+.card-title {
+	&.flow-text {
+		font-size: inherit;	
+	}
+}
+
 // HIDDEN CARD TITLES
 //
 .card {
