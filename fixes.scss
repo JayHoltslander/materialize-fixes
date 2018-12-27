@@ -36,6 +36,25 @@ $sidenav-divider: rgba(255,255,255,0.2);
 }
 
 
+// FIX FOR MATERIALIZE'S TOOLBAR FROM FAB
+// Prevents circular buttons within the expanded toolbar.
+// See: https://codepen.io/j_holtslander/pen/wRqGRv
+.fixed-action-btn {
+  &.toolbar {
+    ul {
+      li {
+        a {
+          &.btn-floating {
+            border-radius:0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 // CUSTOM NAV-CENTER
 // See: https://stackoverflow.com/a/42890059/751570
 //
