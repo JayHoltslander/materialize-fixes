@@ -1,17 +1,13 @@
 // Jay's Materialize Fixes
 // See: https://github.com/JayHoltslander/materialize-fixes
 
+
+
 // Material Icons Fix
 // See: https://codepen.io/j_holtslander/pen/prEXEa
 //
 .material-icons {font-size: inherit;}
 
-
-// CUSTOM VARIABLES
-//
-$sidenav-bg: #151515;
-$sidenav-color: rgba(255,255,255,0.5);
-$sidenav-divider: rgba(255,255,255,0.2);
 
 
 // IPHONE X+ SCREEN FIX FOR MATERIALIZE
@@ -25,6 +21,7 @@ $sidenav-divider: rgba(255,255,255,0.2);
 }
 
 
+
 // FIX .COLLECTION-ITEM THAT HAS .AVATAR
 // See: https://codepen.io/j_holtslander/pen/OrPQJL?editors=1100
 .collection {
@@ -34,6 +31,7 @@ $sidenav-divider: rgba(255,255,255,0.2);
     }	
   }	
 }
+
 
 
 // FIX FOR MATERIALIZE'S TOOLBAR FROM FAB
@@ -55,23 +53,41 @@ $sidenav-divider: rgba(255,255,255,0.2);
 
 
 
+// FIX MATERIALIZE'S CARD-IMAGES
+// Better handling of images within cards
+// See: https://codepen.io/j_holtslander/pen/KbXyrq
+.card {
+  .card-image {
+    img {
+      height: 240px; // CONTROLS YOURS DESIRED CARD IMAGE HEIGHT
+      object-fit: cover; // NO MATTER WHAT THE IMAGE'S HEIGHT OR ASPECT RATIO IT WILL SCALE WELL WITHIN THE HEIGHT
+    }
+  }
+  .card-content {
+    max-height: initial; // ADDITONAL FIX
+  }
+}
+
+
+
 // CUSTOM NAV-CENTER
 // See: https://stackoverflow.com/a/42890059/751570
 //
 nav {
-	&.nav-center {
-		ul {
-			text-align: center;
-			li {
-				display: inline;
-				float: none;
-				a {
-					display: inline-block;
-				}
-			}
-		}
-	}
+  &.nav-center {
+    ul {
+      text-align: center;
+      li {
+        display: inline;
+        float: none;
+        a {
+          display: inline-block;
+        }
+      }
+    }
+  }
 }
+
 
 
 // MATERIALIZE'S STICKY FOOTER
@@ -81,86 +97,102 @@ body {display: flex;min-height: 100vh;flex-direction: column;}
 main {flex: 1 0 auto;}
 
 
+
 // CUSTOM FIXED FOOTER FOR MATERIALIZE
 //
 .footer-fixed {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
+
+
 
 // CUSTOM CARD TITLE GRADIENTS
 //
 .card {
-	.card-image {
-		.card-title {
-			&.gradient {
-				padding-top: 64px;
-				display: block;
-				width: 100%;
-				background-color: rgba(0,0,0,0);
-				background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 100%);
-				background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0.8) 100%);
-				background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0.8) 100%);
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#cc000000',GradientType=0 );
-			}
-		}	
-	}	
+  .card-image {
+    .card-title {
+      &.gradient {
+        padding-top: 64px;
+        display: block;
+        width: 100%;
+        background-color: rgba(0,0,0,0);
+        background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 100%);
+        background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0.8) 100%);
+        background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0.8) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#cc000000',GradientType=0 );
+      }
+    }	
+  }	
 }
+
+
 
 // IMPROVE CARD-TITLE TO ALLOW FOR FLOW-TEXT TO BE USED
 .card-title {
-	&.flow-text {
-		font-size: inherit;	
-	}
+  &.flow-text {
+    font-size: inherit;	
+  }
 }
 
-// HIDDEN CARD TITLES
+
+
+// ADD ABILITY TO HIDE CARD TITLES
 //
 .card {
-	.card-title {
-		&.hidden {
-			text-indent:-9999px;
-		}
-	}
+  .card-title {
+    &.hidden {
+      text-indent:-9999px;
+    }
+  }
 }
+
+
 
 // FULL-WIDTH COLLECTIONS INSIDE CARD-CONTENT
 .card {
-	ul {
-		&.collection {
-			&.full-width {
-				width: calc(100% + 48px);
-				left: -24px;
-				border-left: none;
-				border-right: none;
-			}
-		}
-	}
+  ul {
+    &.collection {
+      &.full-width {
+        width: calc(100% + 48px);
+        left: -24px;
+        border-left: none;
+        border-right: none;
+      }
+    }
+  }
 }
 
 
+
 // CUSTOM DARK SIDEBAR
+// See: https://codepen.io/j_holtslander/pen/oqGWYJ
 //
+// CUSTOM VARIABLES
+$sidenav-bg: #151515;
+$sidenav-color: rgba(255,255,255,0.5);
+$sidenav-divider: rgba(255,255,255,0.2);
+
 .sidenav {
-	&.dark {
-		background-color: $sidenav-bg;
-		color: $sidenav-color;
-		.subheader {
-			color: $sidenav-color;
-		}
-		.divider {
-			background-color: $sidenav-divider;
-		}
-		li {
-			a {
-				color: $sidenav-color;
-				i.material-icons {
-					color: $sidenav-color;
-				}
-			}
-		}	
-	}
+  &.dark {
+    background-color: $sidenav-bg;
+    color: $sidenav-color;
+    .subheader {
+      color: $sidenav-color;
+    }
+    .divider {
+      background-color: $sidenav-divider;
+    }
+    li {
+      a {
+        color: $sidenav-color;
+        i.material-icons {
+          color: $sidenav-color;
+        }
+      }
+    }	
+  }
 }
 
 // CUSTOM ESCAPE CONTAINER
@@ -178,23 +210,23 @@ main {flex: 1 0 auto;}
 // See: https://codepen.io/j_holtslander/pen/JybxXy
 //
 .icon {
-	i.circle {
-		font-size: 18px;
-		line-height: 42px;
-		color: #fff;
-		background-color: #999;
-		text-align: center;
-	}
-	.circle {
-		position: relative;
+  i.circle {
+    font-size: 18px;
+    line-height: 42px;
+    color: #fff;
+    background-color: #999;
+    text-align: center;
+  }
+  .circle {
+    position: relative;
     margin-right: 16px;
     margin-bottom: 16px;
     float: left;
-		width: 42px;
-		height: 42px;
-		overflow: hidden;
-		left: 15px;
-		display: inline-block;
-		vertical-align: middle;
-	}
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
