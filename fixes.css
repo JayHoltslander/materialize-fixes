@@ -10,15 +10,37 @@
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
+.navbar-fixed {
+  position: fixed;
+  width: 100%;
+}
+
+.collection .collection-item.avatar {
+  min-height: 64px;
+}
+
+.fixed-action-btn.toolbar ul li a.btn-floating {
+  border-radius: 0;
+}
+
+.card .card-image img {
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .card-content {
+  max-height: initial;
+}
+
 nav.nav-center ul {
-    text-align: center;
+  text-align: center;
 }
 nav.nav-center ul li {
-    display: inline;
-    float: none;
+  display: inline;
+  float: none;
 }
 nav.nav-center ul li a {
-    display: inline-block;
+  display: inline-block;
 }
 
 body {
@@ -44,6 +66,21 @@ main {
   background-color: rgba(0, 0, 0, 0);
   background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#cc000000',GradientType=0 );
+}
+
+.card-title.flow-text {
+  font-size: inherit;
+}
+
+.card .card-title.hidden {
+  text-indent: -9999px;
+}
+
+.card ul.collection.full-width {
+  width: calc(100% + 48px);
+  left: -24px;
+  border-left: none;
+  border-right: none;
 }
 
 .sidenav.dark {
@@ -91,3 +128,4 @@ main {
   display: inline-block;
   vertical-align: middle;
 }
+
