@@ -2,6 +2,10 @@ There's a lot of stuff in Materialize that doesn't quite work right. I've found 
 This repo contains a hosted css file that contains my common fixes for Materialize. Easy to import into a project now and immediately fix many annoyances.
 
 ## What's included:
+
+### &#8226; Fix paragraph spacing within .card-content
+A paragraph needs spacing after it so that two paragraphs don't blend together and look like one. This fixes that.
+
 ### &#8226; Material icons fix
 Make Material icons behave in an expected fashion like Font Awesome icons do.
 
