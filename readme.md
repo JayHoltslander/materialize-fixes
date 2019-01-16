@@ -32,7 +32,7 @@ If the class .avatar exists with a .collection-item then the min-height for the 
 **Demo:** https://codepen.io/j_holtslander/pen/OrPQJL?editors=1100
 
 ### &#8226; Fix for Materialize's toolbar from FAB
-Prevents circular buttons within the expanded toolbar.
+Prevents circular or oval appearance for colored buttons within the expanded toolbar.
 
 **Demo:** https://codepen.io/j_holtslander/pen/wRqGRv
 
