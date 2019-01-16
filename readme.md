@@ -3,6 +3,11 @@ This repo contains a hosted css file that contains my common fixes for Materiali
 
 ## What's included:
 
+### &#8226; FIX NAVBAR HEIGHT CHANGE
+Prevents odd size discepancy between mobile and tablet.
+
+### &#8226; FIX ICONS IN TABS
+
 ### &#8226; Fix paragraph spacing within .card-content
 A paragraph needs spacing after it so that two paragraphs don't blend together and look like one. This fixes that.
 
