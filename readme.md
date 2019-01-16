@@ -66,7 +66,7 @@ Tweak to allow for the usage of flow-text within a card-title
 Position a title offscreen to hide it while not removing it. Usually for SEO reasons.
 
 ### &#8226; Full-width collections inside card-content
-When a collection is within a card on mobile, it should be the full width of the card. This fix makes it so.
+When a .collection is within a .card on mobile, it should be the full width of the card. This fix makes it so.
 
 ### &#8226; Custom dark sidebar
 A dark sidebar option.
