@@ -1,3 +1,7 @@
+.card .card-content p {
+  margin-bottom: 1em;
+}
+
 .material-icons {
   font-size: inherit;
 }
@@ -17,6 +21,21 @@
 
 .collection .collection-item.avatar {
   min-height: 64px;
+}
+
+@media only screen and (min-width: 601px) {
+  nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    height: 56px;
+    line-height: 56px;
+  }
+
+  .navbar-fixed {
+    height: 56px;
+  }
+}
+.tabs .material-icons {
+  position: relative;
+  top: 6px;
 }
 
 .fixed-action-btn.toolbar ul li a.btn-floating {
@@ -128,4 +147,3 @@ main {
   display: inline-block;
   vertical-align: middle;
 }
-
