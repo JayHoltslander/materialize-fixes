@@ -1,6 +1,9 @@
 // Jay's Materialize Fixes
 // See: https://github.com/JayHoltslander/materialize-fixes
 
+
+
+
 // FIX PARAGRAPH SPACING WITHIN .CARD-CONTENT
 //
 .card {
@@ -46,6 +49,32 @@
       min-height: 64px;
     }	
   }	
+}
+
+
+
+// FIX NAVBAR HEIGHT CHANGE
+// Prevents odd size discepancy between mobile and tablet.
+//
+@media only screen and (min-width: 601px) {
+  nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    height: 56px; // Was 64px
+    line-height: 56px; // Was 64px
+  }
+  .navbar-fixed {
+    height: 56px;
+  }
+}
+
+
+
+// FIX ICONS IN TABS
+//
+.tabs {
+  .material-icons {
+    position: relative;
+    top: 6px;
+  }
 }
 
 
