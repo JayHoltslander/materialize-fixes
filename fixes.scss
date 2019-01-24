@@ -3,6 +3,42 @@
 
 
 
+// RESTORE MISSING (BUT DOCUMENTED) HELPER CLASSES
+//
+.show-on-small {
+	// Hide from 601px and up
+	@media only screen and (min-width: 601px) {
+		display: none !important;
+	}
+}
+.show-on-medium {
+	// Hide from 0px to 600px (Small)
+	@media only screen and (max-width: 600px) {
+		display: none !important;
+	}
+	// Hide from 993px and up (Desktop)
+	@media only screen and (min-width: 993px) {
+		display: none !important;
+	}
+}
+.show-on-large {
+	// Hide from 0px to 993px (Desktop)
+	@media only screen and (max-width: 993px) {
+    display: none !important;
+	}
+}
+.show-on-medium-and-up {
+	@media only screen and (max-width: 600px) {
+    display: none !important;
+	}
+}
+.show-on-medium-and-down {
+	@media only screen and (min-width: 993px) {
+    display: none !important;
+	}
+}
+
+
 
 // FIX PARAGRAPH SPACING WITHIN .CARD-CONTENT
 //
@@ -13,6 +49,7 @@
     }
   }
 }
+
 
 
 // Material Icons Fix
