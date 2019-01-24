@@ -3,6 +3,9 @@ This repo contains a hosted css file that contains my common fixes for Materiali
 
 ## What's included:
 
+### &#8226; Restore missing helper classes
+Half of Materialize's [documented helper classes](https://materializecss.com/helpers.html) don't work. They're just MIA. This fix restores them.
+
 ### &#8226; Fix navbar's height change
 Prevents odd size discepancy between mobile and tablet.
 
