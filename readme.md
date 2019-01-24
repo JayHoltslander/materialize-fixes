@@ -85,9 +85,16 @@ Want to use Font awesome icons within Materialize? Now you can.
 **Demo:** https://codepen.io/j_holtslander/pen/JybxXy
 
 ## Use in your project
-1. Save [the compiled css file](https://raw.githubusercontent.com/JayHoltslander/materialize-fixes/master/fixes.css) into your project (Recommended)
-2. Download [the Sass version](https://raw.githubusercontent.com/JayHoltslander/materialize-fixes/master/fixes.scss) to include in your project
-3. Import within your stylesheet (Not recommended)
+1. Save [the compiled css file](https://raw.githubusercontent.com/JayHoltslander/materialize-fixes/master/fixes.css) into your project and load it within the head of your document. (Recommended)
+````html
+<link rel="stylesheet" type="text/css" href="css/fixes.css">
+````
+2. Download [the Sass version](https://raw.githubusercontent.com/JayHoltslander/materialize-fixes/master/fixes.scss) to include in your project's build (Advanced)
+3. Link to it from within the head of your document
+````html
+<link rel="stylesheet" type="text/css" href="https://jayholtslander.github.io/materialize-fixes/fixes.css">
+````
+4. Import within your stylesheet (Not recommended)
 ````css
 @import url("https://jayholtslander.github.io/materialize-fixes/fixes.css");
 ````
