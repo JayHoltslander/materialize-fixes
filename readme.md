@@ -9,7 +9,7 @@ Half of Materialize's [documented helper classes](https://materializecss.com/hel
 ### &#8226; Fix navbar's height change
 Prevents odd size discepancy between mobile and tablet.
 
-### &#8226; Fis icons in tabs
+### &#8226; Fix icons in tabs
 
 ### &#8226; Fix paragraph spacing within .card-content
 A paragraph needs spacing after it so that two paragraphs don't blend together and look like one. This fixes that.
