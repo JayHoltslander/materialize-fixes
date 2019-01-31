@@ -97,6 +97,10 @@ nav.nav-center ul li a {
   display: inline-block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   min-height: 100vh;
