@@ -170,6 +170,10 @@ nav {
   }
 }
 
+// SMOOTHSCROLLING
+// See: https://css-tricks.com/snippets/jquery/smooth-scrolling/
+//
+html {scroll-behavior: smooth;}
 
 
 // MATERIALIZE'S STICKY FOOTER
