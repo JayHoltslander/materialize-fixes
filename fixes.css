@@ -7,6 +7,24 @@ nav .btn {
   margin-bottom: 0 !important;
 }
 
+.row.flexbox {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.flexbox .col {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+.row.flexbox .col .card,
+.row.flexbox .col .card-panel {
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+
 @media only screen and (min-width: 601px) {
   .show-on-small {
     display: none !important;
@@ -146,13 +164,17 @@ html {
 }
 
 body {
+  display: -webkit-box;
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
 }
 
 main {
-  flex: 1 0 auto;
+  -webkit-box-flex: 1;
+          flex: 1 0 auto;
 }
 
 .footer-fixed {
@@ -166,6 +188,7 @@ main {
   display: block;
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(125, 185, 232, 0)), color-stop(50%, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.8)));
   background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#cc000000',GradientType=0 );
 }
