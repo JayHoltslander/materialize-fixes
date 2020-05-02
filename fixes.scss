@@ -18,6 +18,22 @@ nav {
 	}	
 }
 
+// ADD CUSTOM .FLEXBOX ROW CLASS
+// See: https://codepen.io/j_holtslander/pen/qBOPJYP
+//
+.row {
+  &.flexbox {
+		display: flex;
+		flex-wrap: wrap;
+    .col {
+			display: flex;
+			flex-direction: column;
+			.card, 
+			.card-panel {flex: 1;}
+    }
+  }
+}
+
 
 // RESTORE MISSING (BUT DOCUMENTED) HELPER CLASSES
 //
